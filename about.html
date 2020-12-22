@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel = "stylesheet" href="style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/1b7230a44f.js" crossorigin="anonymous"></script>
+
+    <title>BLOG</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img alt="logo" src="#">
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+        <!--carousel-->
+        <div class="carousel">
+            <div class="row">
+                <section class="slide-wrapper">
+                    
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            
+                
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="fill" >
+                                        <img src="Resources/Slide1_.jpg">
+                                    </div>
+                                    <div class="carousel-text">
+                                        <h2>Heading</h2>
+                                        <h5>Sub heading</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="fill" >
+                                        <img src="Resources/slide2_.jpg">
+                                    </div>
+                                    <div class="carousel-text">
+                                        <h2>Heading</h2>
+                                        <h5>Sub heading</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="fill" >
+                                        <img src="Resources/slide4_.jpg">
+                                    </div>
+                                    <div class="carousel-text">
+                                        <h2>Heading</h2>
+                                        <h5>Sub heading</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="fill" >
+                                        <img src="Resources/slide3_.jpg">
+                                    </div>
+                                    <div class="carousel-text">
+                                        <h2>Heading</h2>
+                                        <h5>Sub heading</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+            </div>
+        </div>
+        <script>
+    
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("carousel-item");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {slideIndex = 1}
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+    
+        </script>
+        </div>
+        
+  </body>
